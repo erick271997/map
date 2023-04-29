@@ -1,15 +1,13 @@
 /* eslint-disable no-global-assign */
 
-import { useState } from 'react';
+
 import Actividad1 from './Actividad1';
 import './App.css';
+import Modal from './Modal';
 
 function App() {
-  const [mensaje, SetMensaje]= useState('')
 
-  const alet=()=>{
-    SetMensaje('Bienavenido a ,i pagia')
-  }
+
 
   const reyes=[
     {
@@ -46,12 +44,13 @@ function App() {
     <>
       <h1> Actividad 1:
 <div>
-       <button></button>
+          <Modal/>
       </div>
 
       </h1>
       
       <Actividad1 reyes={reyes}/>
+   
       
      
      
